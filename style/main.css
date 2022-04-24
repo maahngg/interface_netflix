@@ -1,0 +1,126 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*jogo principal*/
+
+.jogo-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(/img/ar1481.jpg);
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jogo-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    
+    border: none;
+    color: white;
+
+    padding: 10px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    border-radius: 3%;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+    font-weight: bold;
+}
+/*botão de assistir*/
+.play{
+    background-color: white;
+    color: black;
+}
+
+.play:hover{
+    background-color: rgba(231, 226, 226, 0.415);
+    
+}
+
+.info{
+    background-color: rgba(192, 188, 188, 0.547);
+    color: white;
+}
+.info:hover{
+    background-color: rgba(231, 226, 226, 0.158) ;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.jogo-principal .container{
+    width: 50%;
+    text-align: justify;
+}
+
+.box-jogos{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.item{
+    cursor: pointer;
+}
+
+.carousel-jogos{
+    margin-top: 10px;
+}
